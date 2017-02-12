@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  fluentd:
+    build: ./fluentd
+    hostname: fluentd
+    expose:
+      - "24224"
+    volumes:
+      - ./etc:/fluentd/etc
+    restart: always
+    networks:
+      logs:
+        ipv4_address: 10.0.0.10
+
+networks:
+  logs:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 10.0.0.0/24
+        gateway: 10.0.0.1
