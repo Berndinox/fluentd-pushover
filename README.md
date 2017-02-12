@@ -10,15 +10,8 @@ version: '2'
 services:
   ping:
       image: dockercloud/hello-world
-      environment:
-       - VIRTUAL_HOST=ping.berndklaus.at
-       - LETSENCRYPT_HOST=ping.berndklaus.at
-       - LETSENCRYPT_EMAIL=admin@berndklaus.at
       expose:
        - "80/tcp"
-      restart: always
-      networks:
-       - proxy
       logging:
        driver: "fluentd"
        options:
