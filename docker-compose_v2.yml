@@ -2,7 +2,8 @@ version: '2'
 
 services:
   fluentd:
-    build: .
+    #build: .
+    image: berndinox/fluentd-pushover
     hostname: fluentd
     expose:
       - "24224"
