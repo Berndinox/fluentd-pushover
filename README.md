@@ -20,4 +20,4 @@ services:
 
 You can test the stack by exec into the hello-world container and executing an "logger fail"
 
-More (German): https://berndklaus.at/2017/02/12/docker-error-logs-via-push/
+More (German): https://berndklaus.at/docker-error-logs-via-push/
