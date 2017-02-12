@@ -7,7 +7,7 @@ services:
     expose:
       - "24224"
     volumes:
-      - ./etc:/fluentd/etc
+      - ./fluent.conf:/fluentd/etc/fluent.conf
     restart: always
     networks:
       logs:
