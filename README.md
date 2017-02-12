@@ -17,3 +17,5 @@ services:
        options:
          fluentd-address: "10.0.0.10:24224"
 ```
+
+You can test the stack by exec into the hello-world container and executing an "logger fail"
