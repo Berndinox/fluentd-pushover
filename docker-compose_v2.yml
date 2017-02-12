@@ -2,7 +2,7 @@ version: '2'
 
 services:
   fluentd:
-    build: ./fluentd
+    build: .
     hostname: fluentd
     expose:
       - "24224"
