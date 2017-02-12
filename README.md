@@ -5,7 +5,7 @@ If any Container is issuing an error or fails with some task you will get prompt
 > Change User and Acc in the config file or pass the Vars to the container.
 
 Exmaple on how to use:
-'''
+```
 version: '2'
 services:
   ping:
@@ -23,4 +23,4 @@ services:
        driver: "fluentd"
        options:
          fluentd-address: "10.0.0.10:24224"
-'''
+```
