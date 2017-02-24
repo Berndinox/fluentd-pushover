@@ -10,6 +10,7 @@ RUN apk --no-cache add sudo build-base ruby-dev && \
 
     rm -rf /home/fluent/.gem/ruby/2.3.0/cache/*.gem && sudo -u fluent gem sources -c && \
     apk del sudo build-base ruby-dev
+COPY ./fluent.conf /fluentd/etc/fluent.conf
 
 EXPOSE 24224
 
