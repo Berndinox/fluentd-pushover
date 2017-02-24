@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  fluentd:
+    image: berndinox/fluentd-pushover
+    ports:
+      - 24224:24224
+    deploy:
+      replicas: 1
+    environment:
+      - PUSHACC=YouAppKey
+      - PUSHKEY=YourUserKey
