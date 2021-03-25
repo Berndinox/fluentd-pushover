@@ -1,3 +1,8 @@
+### outdated
+### for testing only
+### no warranty
+---------------------------
+
 # fluentd-pushover
 
 If any Container is issuing an error or fails with some task you will get prompted with an Pushover notficitaion.
