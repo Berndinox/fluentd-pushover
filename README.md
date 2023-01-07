@@ -26,3 +26,6 @@ services:
 You can test the stack by exec into the hello-world container and executing an "logger fail"
 
 More (German): https://berndklaus.at/docker-error-logs-via-push/
+
+
+Source - Fluentd: https://www.fluentd.org/
